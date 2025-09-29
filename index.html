@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NY Trade - Home</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Placeholder for header -->
+  <div id="header"></div>
+
+  <!-- Page content -->
+  <section>
+    <h1>Welcome to NY Trade</h1>
+    <p>
+      NY Trade is a trusted leader in international commerce.
+      We connect businesses with global opportunities, building long-term relationships rooted in trust and performance.
+    </p>
+  </section>
+
+  <!-- Placeholder for footer -->
+  <div id="footer"></div>
+
+  <!-- Script to inject header/footer -->
+  <script>
+    async function loadPart(id, file) {
+      const res = await fetch(file);
+      document.getElementById(id).innerHTML = await res.text();
+    }
+    loadPart("header", "header.html");
+    loadPart("footer", "footer.html");
+  </script>
+
+</body>
+</html>
