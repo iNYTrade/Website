@@ -6,7 +6,7 @@
 }
 
 body {
-  font-family: "Helvetica Neue", Aptos Light, sans-serif;
+  font-family: "Aptos Light", Aptos Light, sans-serif;
   font-size: 16px;
   line-height: 1.6;
   color: #222;
@@ -60,4 +60,3 @@ footer {
   padding: 20px;
 
 }
-
