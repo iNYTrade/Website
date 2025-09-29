@@ -48,12 +48,14 @@
         const res = await fetch(file);
         document.getElementById(id).innerHTML = await res.text();
       }
+	  loadPart("header", "header.html");
       loadPart("footer", "footer.html");
     </script>
   
   </body>
 
 </html>
+
 
 
 
