@@ -39,24 +39,14 @@
         const res = await fetch(file);
         document.getElementById(id).innerHTML = await res.text();
       }
-    
-      // Load header + footer
-      loadPart("header", "header.html").then(() => {
-        // After header loads, highlight active link
-        const current = window.location.pathname.split("/").pop() || "index.html";
-        document.querySelectorAll("nav a").forEach(link => {
-          if (link.getAttribute("href") === current) {
-            link.classList.add("active");
-          }
-        });
-      });
-    
+      loadPart("header", "header.html");
       loadPart("footer", "footer.html");
     </script>
   
   </body>
 
 </html>
+
 
 
 
