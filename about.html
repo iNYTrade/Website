@@ -43,13 +43,19 @@
       {   const res = await fetch(file);
           document.getElementById(id).innerHTML = await res.text();
       }
-      loadPart("header", "assets/header.html");
+      
+      loadPart("header", "header.html").then(() =>
+      {  const page = window.location.pathname.split("/").pop() || "index.html";
+         document.querySelector(`nav a[href="${page}"]`)?.classList.add("active");
+      });
+      
       loadPart("footer", "assets/footer.html");
     </script>
   
   </body>
 
 </html>
+
 
 
 
