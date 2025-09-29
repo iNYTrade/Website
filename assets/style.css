@@ -15,7 +15,7 @@ body {
 
 /* Shared header */
 header {
-  background: #002244;  /* deep navy */
+  background: #white;
   color: #fff;
   padding: 20px;
 }
@@ -38,7 +38,8 @@ nav a {
 }
 
 nav a:hover {
-  text-decoration: underline;
+  //text-decoration: underline;
+  text-decoration: bold;
 }
 
 /* Shared section styling */
@@ -60,3 +61,4 @@ footer {
   padding: 20px;
 
 }
+
