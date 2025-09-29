@@ -1,55 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
   
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>NYTrade/About</title>
-  <link rel="stylesheet" href="assets/style.css">
-</head>
-  
-<body>
-  
-  <div id="header"></div>
-
-  <section>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NYTrade/About</title>
+    <link rel="stylesheet" href="assets/style.css">
+  </head>
     
-    <h1>Overview</h1>
-    <br/>
-    <p>  
-    NYTrade develops proprietary trading strategies by means of a systematic approach.  Using modelling designed to manage risk and benefit from diverse trading conditions, NYTrade asserts that positive returns can be achieved independent of market outcome.
-    </p>
-    <br/>
-    <br/>
-    <br/>
-    
-    <h1>Mission</h1>
-    <br/>
-    <p>
-    NYTrade's mission is to offer excess returns over the benchmark index on any given year while minimizing the risk it must undertake in doing so.
-    </p>
-    <br/>
-    <br/>
-    <br/>
-    
-  </section>
-
-  <div id="footer"></div>
-
+  <body>
   
-  <script>
-    async function loadPart(id, file)
-    {   const res = await fetch(file);
-        document.getElementById(id).innerHTML = await res.text();
-    }
-    loadPart("header", "assets/header.html");
-    loadPart("footer", "assets/footer.html");
-  </script>
+    <div id="header"></div>
 
-  
+    <section>
+    
+      <h1>Overview</h1>
+      <br/>
+      <p>  
+      NYTrade develops proprietary trading strategies by means of a systematic approach.  Using modelling designed to manage risk and benefit from diverse trading conditions, NYTrade asserts that positive returns can be achieved independent of market outcome.
+      </p>
+      <br/>
+      <br/>
+      <br/>
+      
+      <h1>Mission</h1>
+      <br/>
+      <p>
+      NYTrade's mission is to offer excess returns over the benchmark index on any given year while minimizing the risk it must undertake in doing so.
+      </p>
+      <br/>
+      <br/>
+      <br/>
+    
+    </section>
+
+    <div id="footer"></div>
+
+    <script>
+      async function loadPart(id, file)
+      {   const res = await fetch(file);
+          document.getElementById(id).innerHTML = await res.text();
+      }
+      loadPart("header", "assets/header.html");
+      loadPart("footer", "assets/footer.html");
+    </script>
+
   </body>
   
 </html>
+
 
 
 
