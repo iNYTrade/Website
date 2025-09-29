@@ -4,8 +4,9 @@ ts/<!DOCTYPE html>
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="assets/favicon.ico">
     <title>NYTrade</title>
-    <link rel="stylesheet" href="/assets/style.css">
+    <link rel="stylesheet" href="assets/style.css">
   </head>
 
   
@@ -36,16 +37,13 @@ ts/<!DOCTYPE html>
         const res = await fetch(file);
         document.getElementById(id).innerHTML = await res.text();
       }
-      loadPart("header", "header.html");
-      loadPart("footer", "footer.html");
+      loadPart("header", "assets/header.html");
+      loadPart("footer", "assets/footer.html");
     </script>
   
   </body>
 
 </html>
-
-
-
 
 
 
