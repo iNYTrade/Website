@@ -9,8 +9,8 @@ body {
   font-family: 'Courier New', Courier, monospace;
   font-size: 16px;
   line-height: 1.6;
-  color: #ff0000;
-  background: green;
+  color: black;
+  background: white;
 }
 
 /* Shared header */
@@ -31,7 +31,7 @@ nav {
 }
 
 nav a {
-  color: #fff;
+  color: #1A3564;
   text-decoration: none;
   margin-right: 20px;
   font-weight: 500;
@@ -60,6 +60,7 @@ footer {
   padding: 20px;
 
 }
+
 
 
 
