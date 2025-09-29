@@ -9,8 +9,8 @@ body {
   font-family: "Aptos Light", Aptos Light, sans-serif;
   font-size: 16px;
   line-height: 1.6;
-  color: #222;
-  background: #f9f9f9;
+  color: #red;
+  background: #green;
 }
 
 /* Shared header */
@@ -61,4 +61,5 @@ footer {
   padding: 20px;
 
 }
+
 
