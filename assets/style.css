@@ -17,7 +17,7 @@ body
 header
 { background: #ffffff;
   color: #fff;
-  padding: 15px;
+  padding: 10px;
 }
 
 header .logo
@@ -39,7 +39,7 @@ header .logo
 
 
 nav
-{ margin-top: 10px;
+{ margin-top: 1px;
   margin-left: 20px;
 }
 
@@ -76,6 +76,7 @@ footer
   color: #777;
   padding: 20px;
 }
+
 
 
 
