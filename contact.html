@@ -2,53 +2,59 @@
 <html lang="en">
 
 	
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-    <title>Contact</title>
-    <link rel="stylesheet" href="assets/style.css">
-    <link rel="icon" href="assets/nytrade_favicon.ico" type="image/x-icon">
-  </head>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+		<link rel="stylesheet" href="assets/style.css">
+		<link rel="icon" href="assets/nytrade_favicon.ico" type="image/x-icon">
+ 		<title>Contact</title>
+	</head>
+
+
+	<div id="header"></div>
 
 	
-  <div id="header"></div>
+	<nav>
+		<a href='index.html'>				Home</a>
+		<a href='about.html'>				About</a>
+		<a href='careers.html'>				Careers</a>
+		<a href='contact.html' class='active>		Contact</a>
+	</nav>
 
-	
-  <nav>
-	<a href='index.html'>					Home</a>
-    <a href='about.html'>					About</a>
-    <a href='careers.html'>					Careers</a>
-    <a href='contact.html' class='active'>	Contact</a>
-  </nav>
-
-	
-<body>
-
-  <section>
-    <h1>Contact Us</h1>
-    <p>Email: <a href="mailto:info@nytrade.com">here</a></p>
-  </section>
-
-  <div id="footer"></div>
   
-  <script>
-      async function loadPart(id, file)
-      {   const res = await fetch(file);
-          document.getElementById(id).innerHTML = await res.text();
-      }
-      
-      loadPart("header", "header.html").then(() =>
-      {  const page = window.location.pathname.split("/").pop() || "index.html";
-         document.querySelector(`nav a[href="${page}"]`)?.classList.add("active");
-      });
-      
-      loadPart("footer", "assets/footer.html");
-    </script>
+	<body>
+
+
+		<section>
+
+			<h1>Inquiries</h1>
+    			<br/>
+			<p>
+			Email: <a href="mailto:info@nytrade.com">here</a>
+			</p>
+			<br/>
+			<br/>
+			<br/>
+
+		</section>
+
+
+		<div id="footer"></div>
+
+
+		<script>
+
+			async function loadPart(id, file)
+			 {   	const res = await fetch(file);
+				document.getElementById(id).innerHTML = await res.text();
+			 }
+			loadPart("header", "assets/header.html");
+			loadPart("footer", "assets/footer.html");
+
+		</script>
+
   
-  </body>
+	</body>
+
 
 </html>
-
-
-
-
