@@ -16,11 +16,6 @@ body
   flex-direction: column;
 }
 
-.content {
-  flex: 1;
-}
-
-
 main {
   flex: 1;              /* take up all available space */
 }
@@ -89,6 +84,7 @@ footer
   color: #777;
   padding: 20px;
 }
+
 
 
 
