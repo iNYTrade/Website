@@ -5,6 +5,12 @@
 }
 
 
+hr {
+  border: none;
+  border-top: 1px dashed black;
+}
+
+
 body
 { font-family: 'Courier New', Courier, monospace;
   font-size: 15px;
@@ -84,6 +90,7 @@ footer
   color: #777;
   padding: 20px;
 }
+
 
 
 
