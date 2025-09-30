@@ -2,76 +2,67 @@
 <html lang="en">
 
 	
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-    <title>Home</title>
-    <link rel="stylesheet" href="assets/style.css">
-    <link rel="icon" href="assets/nytrade_favicon.ico" type="image/x-icon">
-  </head>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+		<link rel="stylesheet" href="assets/style.css">
+		<link rel="icon" href="assets/nytrade_favicon.ico" type="image/x-icon">
+ 		<title>Home</title>
+	</head>
 
 
-  <div id="header"></div>
-
-	
-  <nav>
-	<a href='index.html' class='active'>	Home</a>
-    <a href='about.html'>					About</a>
-    <a href='careers.html'>					Careers</a>
-    <a href='contact.html'>					Contact</a>
-  </nav>
+	<div id="header"></div>
 
 	
-  <body>
+	<nav>
+		<a href='index.html' class='active>		Home</a>
+		<a href='about.html'>				About</a>
+		<a href='careers.html'>				Careers</a>
+		<a href='contact.html'>				Contact</a>
+	</nav>
+
   
-    <section>
-      <h1></h1>
+	<body>
+  
 
-      <img src='assets/nytrade_tickers.png' alt='tickers' style='width: 550px; height: 400px;'>
-      
-    
+		<section>
 
-        <p>
-        <br clear='left'/>
-        <i>Markets can remain irrational longer than you can remain solvent.</i>
-        
+			<h1></h1>
+
+			<img src='assets/nytrade_tickers.png' alt='tickers' style='width: 550px; height: 400px;'>
+      			<p>
+			<br clear='left'/>
+			<br/>
+			<i>Markets can remain irrational longer than you can remain solvent.</i>
+			<br/>
                                                           -- John Maynard Keynes
+			<br/>
+			<br/>
+			<br/>
+			</p>
 
-        </p>
-    
-    </section>
+		</section>
   
-    <div id="footer"></div>
+
+		<div id="footer"></div>
+
+
+		<script>
+
+			async function loadPart(id, file)
+			 {   	const res = await fetch(file);
+				document.getElementById(id).innerHTML = await res.text();
+			 }
+			loadPart("header", "assets/header.html");
+			loadPart("footer", "assets/footer.html");
+
+		</script>
+
   
-    
-    <script>
-      async function loadPart(id, file) {
-        const res = await fetch(file);
-        document.getElementById(id).innerHTML = await res.text();
-      }
-	  loadPart("header", "header.html");
-      loadPart("footer", "footer.html");
-    </script>
-  
-  </body>
+	</body>
+
 
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
