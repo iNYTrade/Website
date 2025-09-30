@@ -2,66 +2,64 @@
 <html lang="en">
 
 	
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-    <title>Careers</title>
-    <link rel="stylesheet" href="assets/style.css">
-    <link rel="icon" href="assets/nytrade_favicon.ico" type="image/x-icon">
-  </head>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+		<link rel="stylesheet" href="assets/style.css">
+		<link rel="icon" href="assets/nytrade_favicon.ico" type="image/x-icon">
+ 		<title>Careers</title>
+	</head>
 
 
-  <div id="header"></div>
+	<div id="header"></div>
 
 	
-  <nav>
-	<a href='index.html'>					Home</a>
-    <a href='about.html'>					About</a>
-    <a href='careers.html' class='active'>	Careers</a>
-    <a href='contact.html'>					Contact</a>
-  </nav>
+	<nav>
+		<a href='index.html'>			Home</a>
+		<a href='about.html'>			About</a>
+		<a href='careers.html' class='active'>	Careers</a>
+		<a href='contact.html'>			Contact</a>
+	</nav>
 
   
-  <body>
+	<body>
 
-  <section>
-    <h1>Careers</h1>
-    <br/>
-    <p>
-      Applicants can submit their candidature below.  CV and references required.
-    </p>
-    <br/>
-    <br/>
-    <br/>
-    
-    <p><strong>Current Openings:</strong></p>
-    <br/>
-    <ul>
-      <li>Equity Market Strategist</li>
-    </ul>
-    <br/>
-    <br/>
-    <br/>
-  </section>
 
-  <div id="footer"></div>
+		<section>
+
+			<p>
+			Applicants can submit their candidature below.  CV and references required.
+			</p>
+			<br/>
+			<br/>
+			<br/>
+			<h1>Current Openings</h1>
+			</p>
+			<br/>
+			Equity Market Strategist
+			<br/>
+			<br/>
+			<br/>
+
+		</section>
+
+
+		<div id="footer"></div>
+
   
-  <script>
-    async function loadPart(id, file)
-    {   const res = await fetch(file);
-        document.getElementById(id).innerHTML = await res.text();
-    }
-    loadPart("header", "assets/header.html");
-    loadPart("footer", "assets/footer.html");
-  </script>
+		<script>
+
+			async function loadPart(id, file)
+			 {   	const res = await fetch(file);
+				document.getElementById(id).innerHTML = await res.text();
+			 }
+			loadPart("header", "assets/header.html");
+			loadPart("footer", "assets/footer.html");
+
+		</script>
+
   
-  </body>
+	</body>
+
 
 </html>
-
-
-
-
-
-
-
