@@ -21,6 +21,11 @@ body
 }
 
 
+main {
+  flex: 1;              /* take up all available space */
+}
+
+
 header
 { background: #ffffff;
   color: #fff;
@@ -84,6 +89,7 @@ footer
   color: #777;
   padding: 20px;
 }
+
 
 
 
