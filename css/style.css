@@ -5,13 +5,17 @@
 }
 
 
+html, body {
+  height: 100%;   /* ensure body fills viewport */
+  margin: 0;
+}
+
 body
 { font-family: 'Courier New', Courier, monospace;
   font-size: 15px;
   line-height: 1.5;
   color: black;
   background: white;
-  min-height: 100%;
   display: flex;
   flex-direction: column;
 }
@@ -84,4 +88,5 @@ footer
   color: #777;
   padding: 20px;
 }
+
 
