@@ -46,6 +46,7 @@ header .logo
   max-width: 100%;
   height: auto; /* Maintains aspect ratio */
   display: block; /* Removes extra space below the image */
+  float: center;
 }
 
 
@@ -88,5 +89,6 @@ footer
   color: #777;
   padding: 20px;
 }
+
 
 
